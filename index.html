@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CV interactivo de Leroy Webb, operario logístico.">
+    <title>CV Interactivo - Leroy Webb</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/200b73f77a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div class="cv-container">
+
+        <aside class="sidebar-left">
+            <div class="profile-info">
+                <div class="top-controls">
+                    <button id="btn-modo" class="theme-btn" type="button"
+                            aria-label="Cambiar a modo claro" title="Cambiar a modo claro">
+                        <i class="fa-solid fa-moon" aria-hidden="true"></i>
+                    </button>
+                </div>
+
+                <div class="avatar-container">
+                    <img src="https://randomuser.me/api/portraits/men/71.jpg" alt="Foto de perfil de Leroy Webb">
+                </div>
+                <p class="cargo">Operario Logístico</p>
+                <h1>Leroy Webb</h1>
+            </div>
+
+            <nav class="nav-buttons" aria-label="Secciones del CV">
+                <a class="nav-btn active" href="#perfil" data-seccion="perfil" aria-label="Sobre mí" title="Sobre mí">
+                    <i class="fa-solid fa-user" aria-hidden="true"></i>
+                </a>
+                <a class="nav-btn" href="#habilidades" data-seccion="habilidades" aria-label="Habilidades" title="Habilidades">
+                    <i class="fa-solid fa-gears" aria-hidden="true"></i>
+                </a>
+                <a class="nav-btn" href="#educacion" data-seccion="educacion" aria-label="Educación" title="Educación">
+                    <i class="fa-solid fa-graduation-cap" aria-hidden="true"></i>
+                </a>
+                <a class="nav-btn" href="#experiencia" data-seccion="experiencia" aria-label="Experiencia" title="Experiencia">
+                    <i class="fa-solid fa-briefcase" aria-hidden="true"></i>
+                </a>
+                <a class="nav-btn" href="#contacto" data-seccion="contacto" aria-label="Contacto" title="Contacto">
+                    <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+                </a>
+            </nav>
+        </aside>
+
+        <main class="content-right" aria-live="polite">
+
+            <section id="perfil" class="seccion">
+                <h2>Sobre mí</h2>
+                <p>Profesional trabajador y responsable, con experiencia en operaciones y logística. Enfocado en la eficiencia operativa, el orden y el cumplimiento de metas diarias.</p>
+            </section>
+
+            <section id="habilidades" class="seccion">
+                <h2>Habilidades técnicas</h2>
+                <ul class="skills-grid">
+                    <li>Gestión de inventarios</li>
+                    <li>Operación de autoelevadores</li>
+                    <li>Control de stock</li>
+                    <li>Logística y envíos</li>
+                    <li>Microsoft Excel</li>
+                    <li>Trabajo en equipo</li>
+                </ul>
+            </section>
+
+            <section id="educacion" class="seccion">
+                <h2>Educación</h2>
+                <ul class="timeline">
+                    <li>
+                        <span class="fecha">2012 - 2014</span>
+                        <strong>Educación Secundaria Completa</strong>
+                        <span class="lugar">Bachillerato Orientado</span>
+                        <button class="btn-detalle" type="button"
+                                aria-expanded="false" aria-controls="detalle-secundaria">Ver más</button>
+                        <div id="detalle-secundaria" class="detalle" hidden>
+                            <strong>Materias destacadas</strong>
+                            <ul>
+                                <li>Matemática aplicada</li>
+                                <li>Física y procesos</li>
+                                <li>Informática básica</li>
+                            </ul>
+
+                            <strong>Proyectos</strong>
+                            <ul>
+                                <li>Planilla de control de stock para el taller de la escuela</li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+
+            <section id="experiencia" class="seccion">
+                <h2>Experiencia laboral</h2>
+                <ul class="timeline">
+                    <li>
+                        <span class="fecha">2018 - Actualidad</span>
+                        <strong>Operario de almacén y logística</strong>
+                        <span class="lugar">Distribuidora Norte S.A.</span>
+                        <button class="btn-detalle" type="button"
+                                aria-expanded="false" aria-controls="detalle-almacen">Ver más</button>
+                        <div id="detalle-almacen" class="detalle" hidden>
+                            <ul>
+                                <li>Recepción, control y almacenamiento de mercadería.</li>
+                                <li>Preparación de pedidos y despacho eficiente.</li>
+                                <li>Mantenimiento del orden y normas de seguridad en el área.</li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+
+            <section id="contacto" class="seccion">
+                <h2>Información de contacto</h2>
+                <ul class="contacto-lista">
+                    <li><i class="fa-solid fa-user" aria-hidden="true"></i> <strong>Nombre:</strong> Leroy Webb</li>
+                    <li><i class="fa-solid fa-cake-candles" aria-hidden="true"></i> <strong>Nacimiento:</strong> 12/4/1996</li>
+                    <li><i class="fa-solid fa-location-dot" aria-hidden="true"></i> <strong>Dirección:</strong> 6091 Walnut Hill Ln</li>
+                    <li><i class="fa-solid fa-phone" aria-hidden="true"></i> <strong>Teléfono:</strong> <a href="tel:+19387358546">(938) 735-8546</a></li>
+                    <li><i class="fa-solid fa-envelope" aria-hidden="true"></i> <strong>Email:</strong> <a href="mailto:leroy.webb@example.com">leroy.webb@example.com</a></li>
+                </ul>
+            </section>
+
+        </main>
+    </div>
+
+    <script src="funciones.js"></script>
+</body>
+</html>
